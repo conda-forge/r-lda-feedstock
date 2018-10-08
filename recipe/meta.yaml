@@ -15,9 +15,8 @@ source:
 
 build:
   merge_build_host: True  # [win]
-  number: 0
+  number: 1
   skip: true  # [win32]
-
   rpaths:
     - lib/R/lib/
     - lib/
@@ -28,12 +27,11 @@ requirements:
     - {{native}}toolchain        # [win]
     - {{posix}}filesystem        # [win]
     - {{posix}}make
-    - {{posix}}sed  # [win]
-    - {{posix}}coreutils  # [win]
-
+    - {{posix}}sed               # [win]
+    - {{posix}}coreutils         # [win]
+    - {{posix}}zip               # [win]
   host:
     - r-base
-
   run:
     - r-base
     - {{native}}gcc-libs         # [win]
@@ -60,4 +58,5 @@ extra:
     - daler
     - jdblischak
     - cbrueffer
+    - dbast
     - stevierene82
