@@ -1,4 +1,4 @@
-{% set version = '1.4.2' %}
+{% set version = "1.4.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -14,8 +14,8 @@ source:
   sha256: 5606a1e1bc24706988853528023f7a004c725791ae1a7309f1aea2fc6681240f
 
 build:
-  merge_build_host: True  # [win]
-  number: 1002
+  merge_build_host: true  # [win]
+  number: 1003
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -25,16 +25,16 @@ requirements:
   build:
     - {{ compiler('c') }}        # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
-    - {{posix}}filesystem        # [win]
-    - {{posix}}make
-    - {{posix}}sed               # [win]
-    - {{posix}}coreutils         # [win]
-    - {{posix}}zip               # [win]
+    - {{ posix }}filesystem        # [win]
+    - {{ posix }}make
+    - {{ posix }}sed               # [win]
+    - {{ posix }}coreutils         # [win]
+    - {{ posix }}zip               # [win]
   host:
     - r-base
   run:
     - r-base
-    - {{native}}gcc-libs         # [win]
+    - {{ native }}gcc-libs         # [win]
 
 test:
   commands:
@@ -44,13 +44,12 @@ test:
 about:
   home: https://CRAN.R-project.org/package=lda
   license: LGPL
-  summary: Implements latent Dirichlet allocation (LDA) and related models.  This includes (but
-    is not limited to) sLDA, corrLDA, and the mixed-membership stochastic blockmodel.  Inference
-    for all of these models is implemented via a fast collapsed Gibbs sampler written
-    in C.  Utility functions for reading/writing data typically used in topic models,
-    as well as tools for examining posterior distributions are also included.
+  summary: Implements latent Dirichlet allocation (LDA) and related models.  This includes (but is not limited to) sLDA, corrLDA, and the mixed-membership stochastic blockmodel.  Inference for all of these models is implemented via a fast collapsed Gibbs sampler written in C.  Utility functions for reading/writing data typically
+    used in topic models, as well as tools for examining posterior distributions are also included.
   license_family: LGPL
 
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-3
 extra:
   recipe-maintainers:
     - conda-forge/r
