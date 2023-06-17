@@ -1,11 +1,22 @@
+About r-lda-feedstock
+=====================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lda-feedstock/blob/main/LICENSE.txt)
+
 About r-lda
-===========
+-----------
 
 Home: https://CRAN.R-project.org/package=lda
 
 Package license: LGPL
 
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lda-feedstock/blob/main/LICENSE.txt)
+Summary: Implements latent Dirichlet allocation (LDA) and related models.  This includes (but is not limited to) sLDA, corrLDA, and the mixed-membership stochastic blockmodel.  Inference for all of these models is implemented via a fast collapsed Gibbs sampler written in C.  Utility functions for reading/writing data typically used in topic models, as well as tools for examining posterior distributions are also included.
+About r-lda
+-----------
+
+Home: https://CRAN.R-project.org/package=lda
+
+Package license: LGPL
 
 Summary: Implements latent Dirichlet allocation (LDA) and related models.  This includes (but is not limited to) sLDA, corrLDA, and the mixed-membership stochastic blockmodel.  Inference for all of these models is implemented via a fast collapsed Gibbs sampler written in C.  Utility functions for reading/writing data typically used in topic models, as well as tools for examining posterior distributions are also included.
 
@@ -27,38 +38,38 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64_r_base4.1</td>
-              <td>
-                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1300&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lda-feedstock?branchName=main&jobName=linux&configuration=linux_64_r_base4.1" alt="variant">
-                </a>
-              </td>
-            </tr><tr>
               <td>linux_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1300&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lda-feedstock?branchName=main&jobName=linux&configuration=linux_64_r_base4.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lda-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.2" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64_r_base4.1</td>
+              <td>linux_64_r_base4.3</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1300&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lda-feedstock?branchName=main&jobName=osx&configuration=osx_64_r_base4.1" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lda-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>osx_64_r_base4.2</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1300&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lda-feedstock?branchName=main&jobName=osx&configuration=osx_64_r_base4.2" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lda-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.2" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1300&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lda-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.3" alt="variant">
                 </a>
               </td>
             </tr><tr>
               <td>win_64</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1300&branchName=main">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lda-feedstock?branchName=main&jobName=win&configuration=win_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lda-feedstock?branchName=main&jobName=win&configuration=win%20win_64_" alt="variant">
                 </a>
               </td>
             </tr>
