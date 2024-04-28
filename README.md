@@ -3,6 +3,7 @@ About r-lda-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-lda-feedstock/blob/main/LICENSE.txt)
 
+
 About r-lda
 -----------
 
@@ -11,6 +12,7 @@ Home: https://CRAN.R-project.org/package=lda
 Package license: LGPL
 
 Summary: Implements latent Dirichlet allocation (LDA) and related models.  This includes (but is not limited to) sLDA, corrLDA, and the mixed-membership stochastic blockmodel.  Inference for all of these models is implemented via a fast collapsed Gibbs sampler written in C.  Utility functions for reading/writing data typically used in topic models, as well as tools for examining posterior distributions are also included.
+
 About r-lda
 -----------
 
@@ -153,7 +155,7 @@ available continuous integration services. Thanks to the awesome service provide
 [CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/),
 [Drone](https://cloud.drone.io/welcome), and [TravisCI](https://travis-ci.com/)
 it is possible to build and upload installable packages to the
-[conda-forge](https://anaconda.org/conda-forge) [Anaconda-Cloud](https://anaconda.org/)
+[conda-forge](https://anaconda.org/conda-forge) [anaconda.org](https://anaconda.org/)
 channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
