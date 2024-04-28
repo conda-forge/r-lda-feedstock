@@ -1,4 +1,4 @@
-{% set version = "1.4.2" %}
+{% set version = "1.5.2" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -11,11 +11,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/lda_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/lda/lda_{{ version }}.tar.gz
-  sha256: 5606a1e1bc24706988853528023f7a004c725791ae1a7309f1aea2fc6681240f
+  sha256: 95d354786e002352a973052df993b9d3acfc9f9598a053afb95ac27c7e150fd4
 
 build:
   merge_build_host: true  # [win]
-  number: 1005
+  number: 0
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -24,7 +24,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}        # [not win]
+    - {{ stdlib("c") }}          # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("c") }}                # [win]
     - {{ posix }}filesystem        # [win]
     - {{ posix }}make
     - {{ posix }}sed               # [win]
