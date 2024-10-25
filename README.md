@@ -9,7 +9,7 @@ About r-lda
 
 Home: https://CRAN.R-project.org/package=lda
 
-Package license: LGPL-2.1-or-layer
+Package license: LGPL-2.1-or-later
 
 Summary: Implements latent Dirichlet allocation (LDA) and related models.  This includes (but is not limited to) sLDA, corrLDA, and the mixed-membership stochastic blockmodel.  Inference for all of these models is implemented via a fast collapsed Gibbs sampler written in C.  Utility functions for reading/writing data typically used in topic models, as well as tools for examining posterior distributions are also included.
 
@@ -18,7 +18,7 @@ About r-lda
 
 Home: https://CRAN.R-project.org/package=lda
 
-Package license: LGPL-2.1-or-layer
+Package license: LGPL-2.1-or-later
 
 Summary: Implements latent Dirichlet allocation (LDA) and related models.  This includes (but is not limited to) sLDA, corrLDA, and the mixed-membership stochastic blockmodel.  Inference for all of these models is implemented via a fast collapsed Gibbs sampler written in C.  Utility functions for reading/writing data typically used in topic models, as well as tools for examining posterior distributions are also included.
 
@@ -65,6 +65,20 @@ Current build status
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1300&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lda-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_r_base4.4" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_r_base4.3</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1300&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lda-feedstock?branchName=main&jobName=win&configuration=win%20win_64_r_base4.3" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_r_base4.4</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=1300&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/r-lda-feedstock?branchName=main&jobName=win&configuration=win%20win_64_r_base4.4" alt="variant">
                 </a>
               </td>
             </tr>
@@ -196,6 +210,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
-* [@conda-forge/r](https://github.com/conda-forge/r/)
+* [@conda-forge/r](https://github.com/orgs/conda-forge/teams/r/)
 * [@stevierene82](https://github.com/stevierene82/)
 

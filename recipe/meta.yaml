@@ -12,8 +12,7 @@ source:
   sha256: 95d354786e002352a973052df993b9d3acfc9f9598a053afb95ac27c7e150fd4
 
 build:
-  number: 1
-  skip: true  # [r_base == "4.2" or win]
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -21,7 +20,7 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}        # [not win]
-    - {{ stdlib("c") }}          # [not win]
+    - {{ stdlib("c") }}
     - {{ compiler('m2w64_c') }}        # [win]
     - {{ stdlib("c") }}                # [win]
     - {{ posix }}filesystem        # [win]
@@ -41,10 +40,9 @@ test:
 
 about:
   home: https://CRAN.R-project.org/package=lda
-  license: LGPL-2.1-or-layer
+  license: LGPL-2.1-or-later
   summary: Implements latent Dirichlet allocation (LDA) and related models.  This includes (but is not limited to) sLDA, corrLDA, and the mixed-membership stochastic blockmodel.  Inference for all of these models is implemented via a fast collapsed Gibbs sampler written in C.  Utility functions for reading/writing data typically
     used in topic models, as well as tools for examining posterior distributions are also included.
-  license_family: LGPL
   license_file:
     - {{ environ["PREFIX"] }}/lib/R/share/licenses/LGPL-2.1
 
